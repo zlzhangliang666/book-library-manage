@@ -1,0 +1,176 @@
+body {
+  font-family: "Microsoft YaHei", Arial, sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  color: #333;
+}
+
+h1.page-title {
+  text-align: center;
+  font-weight: 600;
+  color: #555;
+  margin: 40px 0;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.toolbar input {
+  width: 260px;
+  padding: 6px 8px;
+  border: 1px solid #999;
+}
+
+.actions {
+  margin: 10px 3%;
+}
+
+.msg {
+  width: 94%;
+  margin: 10px auto;
+  padding: 8px 12px;
+  border: 1px solid;
+  display: none;
+}
+
+.msg.ok {
+  display: block;
+  background: #e8f5e9;
+  border-color: #4caf50;
+  color: #2e7d32;
+}
+
+.msg.err {
+  display: block;
+  background: #fdecea;
+  border-color: #e53935;
+  color: #c62828;
+}
+
+table.book-table {
+  width: 94%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.book-table th {
+  background: #808080;
+  color: #fff;
+  padding: 8px;
+  border: 1px solid #ccc;
+  font-weight: 600;
+}
+
+.book-table td {
+  padding: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.book-table tbody tr:nth-child(even) {
+  background: #d9d9d9;
+}
+
+.book-table a {
+  color: #1a73e8;
+  margin: 0 4px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 24px 0;
+}
+
+.pagination a {
+  color: #1a73e8;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.pagination span.num {
+  color: #1a73e8;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.pagination span.num.current {
+  color: #333;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: default;
+}
+
+.pagination input {
+  width: 48px;
+  padding: 3px 5px;
+  border: 1px solid #999;
+}
+
+form.book-form {
+  width: 76%;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: flex;
+  margin: 26px 0;
+}
+
+.form-cell {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-cell label {
+  width: 92px;
+  text-align: right;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.form-cell input,
+.form-cell select {
+  flex: 1;
+  max-width: 300px;
+  padding: 6px 8px;
+  border: 1px solid #999;
+}
+
+.form-cell input[readonly] {
+  background: #eee;
+  color: #666;
+}
+
+.req {
+  color: #c00;
+}
+
+.field-error {
+  color: #c00;
+  font-size: 12px;
+}
+
+.btn-row {
+  text-align: center;
+  margin: 36px 0;
+}
+
+button {
+  padding: 6px 20px;
+  margin: 0 8px;
+  cursor: pointer;
+}

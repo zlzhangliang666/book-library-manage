@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>修改图书信息</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1 class="page-title">修改图书信息</h1>
+
+  <form class="book-form" id="bookForm" onsubmit="return false;">
+    <div class="form-row">
+      <div class="form-cell"><label>图书编号：</label><input type="text" id="bookCde" name="bookCde"><span class="req">*</span><span class="field-error" data-for="bookCde"></span></div>
+      <div class="form-cell"><label>图书名称：</label><input type="text" id="bookName" name="bookName"><span class="req">*</span><span class="field-error" data-for="bookName"></span></div>
+    </div>
+    <div class="form-row">
+      <div class="form-cell"><label>图书类型：</label>
+        <select id="bookType" name="bookType">
+          <option value="">——请选择——</option>
+        </select><span class="req">*</span><span class="field-error" data-for="bookType"></span>
+      </div>
+      <div class="form-cell"><label>作者：</label><input type="text" id="bookAuthor" name="bookAuthor"><span class="req">*</span><span class="field-error" data-for="bookAuthor"></span></div>
+    </div>
+    <div class="form-row">
+      <div class="form-cell"><label>出版社：</label><input type="text" id="publishPress" name="publishPress"><span class="req">*</span><span class="field-error" data-for="publishPress"></span></div>
+      <div class="form-cell"><label>是否借阅：</label>
+        <select id="borrowed" name="borrowed">
+          <option value="0">未借阅</option>
+          <option value="1">已借阅</option>
+        </select><span class="req">*</span>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-cell"><label>入库人：</label><input type="text" id="createdBy" name="createdBy" readonly><span class="req">*</span></div>
+      <div class="form-cell"><label>入库时间：</label><input type="text" id="creationTime" name="creationTime" readonly><span class="req">*</span></div>
+    </div>
+    <div class="form-row">
+      <div class="form-cell"><label>出版日期：</label><input type="date" id="publishDate" name="publishDate"><span class="req">*</span><span class="field-error" data-for="publishDate"></span></div>
+      <div class="form-cell"></div>
+    </div>
+    <div class="btn-row">
+      <button type="button" id="btnSave">修改</button>
+      <button type="button" id="btnBack">返回</button>
+    </div>
+  </form>
+
+  <script src="vendor/jquery.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/edit.js"></script>
+</body>
+</html>
