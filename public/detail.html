@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>查看图书信息</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1 class="page-title">查看图书信息</h1>
+
+  <form class="book-form" onsubmit="return false;">
+    <div class="form-row">
+      <div class="form-cell"><label>图书编号：</label><input type="text" id="bookCde" readonly></div>
+      <div class="form-cell"><label>图书名称：</label><input type="text" id="bookName" readonly></div>
+    </div>
+    <div class="form-row">
+      <div class="form-cell"><label>图书类型：</label><input type="text" id="typeName" readonly></div>
+      <div class="form-cell"><label>作者：</label><input type="text" id="bookAuthor" readonly></div>
+    </div>
+    <div class="form-row">
+      <div class="form-cell"><label>出版社：</label><input type="text" id="publishPress" readonly></div>
+      <div class="form-cell"><label>是否借阅：</label>
+        <select id="borrowed" disabled>
+          <option value="0">未借阅</option>
+          <option value="1">已借阅</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-cell"><label>入库人：</label><input type="text" id="createdBy" readonly></div>
+      <div class="form-cell"><label>入库时间：</label><input type="text" id="creationTime" readonly></div>
+    </div>
+    <div class="btn-row">
+      <button type="button" id="btnBack">返回</button>
+    </div>
+  </form>
+
+  <script src="vendor/jquery.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/detail.js"></script>
+</body>
+</html>

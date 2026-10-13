@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>图书借阅系统-后台管理</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1 class="page-title">图书借阅系统-后台管理</h1>
+
+  <div class="toolbar">
+    <label for="searchName">图书名称：</label>
+    <input type="text" id="searchName" autocomplete="off">
+    <button type="button" id="btnSearch">查询</button>
+  </div>
+
+  <div class="msg" id="msg"></div>
+
+  <div class="actions">
+    <button type="button" id="btnAdd">新增</button>
+  </div>
+
+  <table class="book-table">
+    <thead>
+      <tr>
+        <th>图书编号</th>
+        <th>图书分类</th>
+        <th>图书名称</th>
+        <th>作者</th>
+        <th>出版社</th>
+        <th>入库时间</th>
+        <th>是否借阅</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody id="bookBody"></tbody>
+  </table>
+
+  <div class="pagination" id="pagination"></div>
+
+  <script src="vendor/jquery.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/list.js"></script>
+</body>
+</html>
